@@ -150,9 +150,9 @@ fieldset {
 
 .card {
 	position: relative;
-	max-width: 240px;
+	max-width: 450px;
 	width: 100%;
-	height: 360px;
+	height: 560px;
 	background: repeating-linear-gradient(
 		transparent 0 calc(1.2rem - 1px),
 		#eecfd7 0 1.2rem
@@ -166,8 +166,8 @@ fieldset {
 
 .card__content {
 	padding: 1.3rem 3rem 0 1.25rem;
-	font-size: 0.875rem;
-	line-height: 1.25rem;
+	font-size: 2rem;
+	line-height: 2.2rem;
 
 	p {
 		margin: 0 0 1rem 0;

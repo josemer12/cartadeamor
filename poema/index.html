@@ -69,7 +69,23 @@
 			<div class="heart heart--is-blue heart--with-lines heart--top-right"></div>
 		</div>
     <script src='https://codepen.io/ykosinets/pen/bNbOppq.js'></script>
-	
+	  <audio id="bg-music" loop>
+  <source src="MiSuerte.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  const music = document.getElementById("bg-music");
+
+  // Si ya estaba activada antes
+  if (localStorage.getItem("musicPlaying") === "true") {
+    music.play();
+  }
+
+  function playMusic() {
+    music.play();
+    localStorage.setItem("musicPlaying", "true");
+  }
+</script>
   </body>
   
 </html>

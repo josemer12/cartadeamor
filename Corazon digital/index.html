@@ -48,7 +48,24 @@
       </div>
     </div>
   </div>
-  
+    <audio id="bg-music" loop>
+  <source src="MiSuerte.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  const music = document.getElementById("bg-music");
+
+  // Si ya estaba activada antes
+  if (localStorage.getItem("musicPlaying") === "true") {
+    music.play();
+  }
+
+  function playMusic() {
+    music.play();
+    localStorage.setItem("musicPlaying", "true");
+  }
+</script>
+
 </body>
 
 </html>
